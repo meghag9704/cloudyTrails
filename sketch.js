@@ -20,7 +20,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   square(width/2, height/2, 100);
   background(0);
-  frameRate(60);
+  frameRate(30);
   // noStroke();
 
   audioValues = audio.getColumn('value');
