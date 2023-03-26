@@ -1,22 +1,22 @@
-  let audio, heart;
-  let audioValues, heartValues;
+  let audio;
+  let audioValues;
   let audioStartTime;
   let audioEndTime;
-  let heartStartTime = [];
-  let heartEndTime = [];
+//   let heartStartTime = [];
+//   let heartEndTime = [];
 
 
 
 function preload() {
   audio = loadTable('audio.csv', 'csv', 'header');
-  heart = loadTable('heart.csv', 'csv', 'header');
+//   heart = loadTable('heart.csv', 'csv', 'header');
 }
 
 function setup() {
   print(audio.getRowCount() + ' total rows in Audio Table');
   print(audio.getColumnCount() + ' total columns in Audio Table');
-  print(heart.getRowCount() + 'total rows in Heart Table');
-  print(heart.getColumnCount() + ' total columns in Heart Table');
+//   print(heart.getRowCount() + 'total rows in Heart Table');
+//   print(heart.getColumnCount() + ' total columns in Heart Table');
   createCanvas(windowWidth, windowHeight);
   square(width/2, height/2, 100);
   background(0);
